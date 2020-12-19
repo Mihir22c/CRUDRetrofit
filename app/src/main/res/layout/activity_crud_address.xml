@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CrudAddress">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Id"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_id"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Username"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_id"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_name"/>
+
+        <TextView
+            android:id="@+id/address_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Address type"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_username"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address type"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/address_type"/>
+
+        <TextView
+            android:id="@+id/tv_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Mobile Number"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_address"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_mobile_no"/>
+
+        <TextView
+            android:id="@+id/tv_address_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Address Name"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_mobile_no"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_address_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address Name"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_address_name"/>
+
+        <TextView
+            android:id="@+id/tv_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Block"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_address_name"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Block"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_block"/>
+
+        <TextView
+            android:id="@+id/tv_street_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Street Name"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_block"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_street_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street Name"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_street_name"/>
+
+        <TextView
+            android:id="@+id/tv_building"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Building"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_street_name"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_building"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Building"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_building"/>
+
+        <TextView
+            android:id="@+id/tv_apt_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Apartment Number"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_building"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_apt_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apartment Number"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_apt_no"/>
+
+        <TextView
+            android:id="@+id/tv_addition_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Apartment Notice"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_apt_no"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_addition_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apartment Notice"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_addition_notice"/>
+
+        <TextView
+            android:id="@+id/tv_created_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Created At"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_addition_notice"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_created_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Created At"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@id/tv_created_at"/>
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="#32CD32"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/ed_created_at"
+            />
+
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="Delete User"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@id/btnSave"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ed_created_at"
+            app:layout_constraintStart_toStartOf="@+id/ed_created_at" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
